@@ -4,7 +4,7 @@
     |     | / _ \  \  /
     | \_/ |/ ___ \ /  \
     |_| |_/_/   \_/_/\_\
-           CH > @MAXTAME
+           CH > @MAXXTAME
 --]]
 --------------------------------------
 serpent = require('serpent')
@@ -473,7 +473,7 @@ local channel_user_ts = database:get("channel_user_ts"..bot_id)
 keyboard = {}
 keyboard.inline_keyboard = {
 {
-{text = ''..(channel_ts or "MAX TEAM")..'', url=''..(channel_user_ts or 't.me/MAXTEAM')..''},
+{text = ''..(channel_ts or "MAXX TEAM")..'', url=''..(channel_user_ts or 't.me/MAXXTEAM')..''},
 },
 }
 local keko = "https://api.telegram.org/bot" ..token.. '/sendMessage?chat_id=' .. chat_id
@@ -680,7 +680,7 @@ break
 end
 end
 end 
-info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXTAME')..')\n'..text
+info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXXTAME')..')\n'..text
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
 end
 getUser(msg.sender_user_id_, keko333)
@@ -698,7 +698,7 @@ break
 end
 end
 end 
-info = '👨┇العضو ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXTAME')..')\n'..text
+info = '👨┇العضو ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXXTAME')..')\n'..text
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
 end
 getUser(id_MAXx, keko333)
@@ -716,7 +716,7 @@ break
 end
 end
 end 
-info = '👨┇العضو ⌁≻ ['..(result.first_name_ or value)..'](t.me/'..(result.username_ or 'MAXTAME')..')\n'..text
+info = '👨┇العضو ⌁≻ ['..(result.first_name_ or value)..'](t.me/'..(result.username_ or 'MAXXTAME')..')\n'..text
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
 end
 getUser(value, keko333)
@@ -727,7 +727,7 @@ function TSadd(msg) -- Function add && rem
 local text = msg.content_.text_
 if (text == 'تعطيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXTAME')..')\n'
+info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXXTAME')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -777,7 +777,7 @@ send(msg.chat_id_, msg.id_, 1, ress, 1, 'md')
 return false end
 end
 function TSby(extra,result,success)
-info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXTAME')..')\n'
+info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXXTAME')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -841,7 +841,7 @@ send(msg.chat_id_, msg.id_, 1, ress, 1, 'md')
 return false end
 end
 function TSby(extra,result,success)
-info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXTAME')..')\n'
+info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXXTAME')..')\n'
 if database:get( 'MAX:'..bot_id.."charge:"..msg.chat_id_) then
 function MAX_info(k1,k2)
 send(msg.chat_id_, msg.id_, 1, "❗┇المجموعه {"..(k2.title_ or "").."} مفعله سابقا", 1, 'md')
@@ -873,7 +873,7 @@ getUser(msg.sender_user_id_, TSby)
 end
 if text == "تعطيل" and is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXTAME')..')\n'
+info = '💬┇بواسطه ⌁≻ ['..result.first_name_..'](t.me/'..(result.username_ or 'MAXXTAME')..')\n'
 if not database:get( 'MAX:'..bot_id.."charge:"..msg.chat_id_) then
 function MAX_info(k1,k2)
 send(msg.chat_id_, msg.id_, 1, "❕┇المجموعه {"..(k2.title_ or "").."} معطله سابقا", 1, 'md')
@@ -1735,7 +1735,7 @@ local apow = {string.match(text, "^(رفع منشئ) @(.*)$")}
 function setcreator_by_username(extra, result, success)
 if result.id_ then
 database:sadd('MAX:'..bot_id..'creator:'..msg.chat_id_, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXTAME')..')\n☑┇تم رفع منشئ في البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXXTAME')..')\n☑┇تم رفع منشئ في البوت'
 else
 texts = '✖┇خطاء'
 end
@@ -1766,7 +1766,7 @@ local hash =  'MAX:'..bot_id..'creator:'..msg.chat_id_
 function remcreator_by_username(extra, result, success)
 if result.id_ then
 database:srem(hash, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXTAME')..')\n☑┇تم تنزيله من منشئين المجموعه'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXXTAME')..')\n☑┇تم تنزيله من منشئين المجموعه'
 else
 texts = '✖┇خطاء'
 end
@@ -2013,10 +2013,10 @@ end
 database:sadd("files"..bot_id,name_t[2]..'.lua')
 send(msg.chat_id_, msg.id_, 1, "✔┇تم تفعيل {"..name_t[2]..".lua}\n"..ts23, 1, 'html')
 else
-send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس ماكس \n 👨🏼‍💻┇[ملفات يدعمها سورس ماكس](t.me/MAXFile)', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس ماكس \n 👨🏼‍💻┇[ملفات يدعمها سورس ماكس](t.me/MAXXFile)', 1, 'md')
 end
 else
-send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس ماكس \n 👨🏼‍💻┇[ملفات يدعمها سورس ماكس](t.me/MAXFile)', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس ماكس \n 👨🏼‍💻┇[ملفات يدعمها سورس ماكس](t.me/MAXXFile)', 1, 'md')
 end
 end
 if text:match("^(تعطيل ملف) (.*)(.lua)$") then
@@ -2218,7 +2218,7 @@ local apmd = {string.match(text, "^(رفع ادمن) @(.*)$")}
 function promote_by_username(extra, result, success)
 if result.id_ then
 database:sadd('MAX:'..bot_id..'mods:'..msg.chat_id_, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXTAME')..')\n☑┇تم رفعه ادمن'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXXTAME')..')\n☑┇تم رفعه ادمن'
 else
 texts = '✖┇خطاء'
 end
@@ -2249,7 +2249,7 @@ local apmd = {string.match(text, "^(تنزيل ادمن) @(.*)$")}
 function demote_by_username(extra, result, success)
 if result.id_ then
 database:srem(hash, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXTAME')..')\n☑┇تم تنزيله من ادمنيه البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXXTAME')..')\n☑┇تم تنزيله من ادمنيه البوت'
 else
 texts = '✖┇خطاء'
 end
@@ -2281,7 +2281,7 @@ local apmd = {string.match(text, "^(رفع مميز) @(.*)$")}
 function promote_by_username(extra, result, success)
 if result.id_ then
 database:sadd('MAX:'..bot_id..'vipgp:'..msg.chat_id_, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXTAME')..')\n☑┇تم رفعه مميز'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXXTAME')..')\n☑┇تم رفعه مميز'
 else
 texts = '✖┇خطاء'
 end
@@ -2329,7 +2329,7 @@ local apmd = {string.match(text, "^(تنزيل مميز) @(.*)$")}
 function demote_by_username(extra, result, success)
 if result.id_ then
 database:srem(hash, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXTAME')..')\n☑┇تم تنزيله من اعضاء الممزين البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apmd[2] or 'MAXXTAME')..')\n☑┇تم تنزيله من اعضاء الممزين البوت'
 else
 texts = '✖┇خطاء'
 end
@@ -2379,7 +2379,7 @@ if ck_mod(result.id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر \n🔘┇(اداريين،ادمنيه، مميزين)البوت', 1, 'md')
 else
 database:sadd('MAX:'..bot_id..'banned:'..msg.chat_id_, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apba[2] or 'MAXTAME')..')\n☑┇تم حظره من المجموعه'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apba[2] or 'MAXXTAME')..')\n☑┇تم حظره من المجموعه'
 chat_kick(msg.chat_id_, result.id_)
 end
 else
@@ -2544,7 +2544,7 @@ if ck_admin(result.id_) then
 send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر عام \n🔘┇(اداريين،ادمنيه،مميزين)البوت', 1, 'md')
 else
 local hash =  'MAX:'..bot_id..'gbanned:'
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apbll[2] or 'MAXTAME')..')\n🚫┇تم حظره من المجموعات البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apbll[2] or 'MAXXTAME')..')\n🚫┇تم حظره من المجموعات البوت'
 database:sadd(hash, result.id_)
 end
 else
@@ -2579,7 +2579,7 @@ local apid = {string.match(text, "^(الغاء حظر عام) @(.*)$")}
 function ungban_by_username(extra, result, success)
 local hash =  'MAX:'..bot_id..'gbanned:'
 if result.id_ then
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apid[2] or 'MAXTAME')..')\n🚫┇تم الغاء حظره من المجموعات البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apid[2] or 'MAXXTAME')..')\n🚫┇تم الغاء حظره من المجموعات البوت'
 database:srem(hash, result.id_)
 else
 texts = '✖┇خطاء'
@@ -2617,7 +2617,7 @@ if ck_admin(result.id_) then
 send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم عام \n🔘┇(اداريين،ادمنيه،مميزين)البوت', 1, 'md')
 else
 local hash =  'MAX:'..bot_id..'gmuted:'
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apbll[2] or 'MAXTAME')..')\n🚫┇تم كتمه من المجموعات البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apbll[2] or 'MAXXTAME')..')\n🚫┇تم كتمه من المجموعات البوت'
 database:sadd(hash, result.id_)
 end
 else
@@ -2652,7 +2652,7 @@ local apid = {string.match(text, "^(الغاء كتم العام) @(.*)$")}
 function ungmute_by_username(extra, result, success)
 local hash =  'MAX:'..bot_id..'gmuted:'
 if result.id_ then
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apid[2] or 'MAXTAME')..')\n🚫┇تم الغاء كتمه من المجموعات البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apid[2] or 'MAXXTAME')..')\n🚫┇تم الغاء كتمه من المجموعات البوت'
 database:srem(hash, result.id_)
 else
 texts = '✖┇خطاء'
@@ -2693,7 +2693,7 @@ if ck_mod(result.id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع كتم \n🔘┇(اداريين،ادمنيه،مميزين)البوت', 1, 'md')
 else
 database:sadd('MAX:'..bot_id..'muted:'..msg.chat_id_, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apsi[2] or 'MAXTAME')..')\n🚫┇تم كتمه من البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apsi[2] or 'MAXXTAME')..')\n🚫┇تم كتمه من البوت'
 end
 else
 texts = '✖┇خطاء'
@@ -2728,7 +2728,7 @@ local apsi = {string.match(text, "^(الغاء كتم) @(.*)$")}
 function unmute_by_username(extra, result, success)
 if result.id_ then
 database:srem('MAX:'..bot_id..'muted:'..msg.chat_id_, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apsi[2] or 'MAXTAME')..')\n🚫┇تم الغاء كتمه من البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apsi[2] or 'MAXXTAME')..')\n🚫┇تم الغاء كتمه من البوت'
 else
 texts = '✖┇خطاء'
 end
@@ -2769,7 +2769,7 @@ if result.id_ then
 if ck_mod(result.id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع طرد \n🔘┇(اداريين،ادمنيه،مميزين)البوت', 1, 'md')
 else
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apki[2] or 'MAXTAME')..')\n🚫┇تم طرده من المجموعه'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apki[2] or 'MAXXTAME')..')\n🚫┇تم طرده من المجموعه'
 chat_kick(msg.chat_id_, result.id_)
 end
 else
@@ -2809,7 +2809,7 @@ local apow = {string.match(text, "^(رفع اداري) @(.*)$")}
 function setowner_by_username(extra, result, success)
 if result.id_ then
 database:sadd('MAX:'..bot_id..'owners:'..msg.chat_id_, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXTAME')..')\n☑┇تم رفع اداري في البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXXTAME')..')\n☑┇تم رفع اداري في البوت'
 else
 texts = '✖┇خطاء'
 end
@@ -2840,7 +2840,7 @@ local hash =  'MAX:'..bot_id..'owners:'..msg.chat_id_
 function remowner_by_username(extra, result, success)
 if result.id_ then
 database:srem(hash, result.id_)
-texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXTAME')..')\n☑┇تم تنزيله من اداريين البوت'
+texts = '👨┇العضو ⌁≻ ['..result.title_..'](t.me/'..(apow[2] or 'MAXXTAME')..')\n☑┇تم تنزيله من اداريين البوت'
 else
 texts = '✖┇خطاء'
 end
@@ -3168,14 +3168,14 @@ end
 if (text and text == "تعطيل الاعلانات" and is_creator(msg)) then 
 if not is_sudo(msg) then 
 database:set("MAX:gr:not:ads:"..bot_id..msg.chat_id_..os.date("%x"),"ok")
-send(msg.chat_id_, msg.id_, 1, '🖲┇ تم تعطيل ضهور الاعلانات لمده يوم \n📊┇ [يمكنك يوزره المزيد حول الاعلانات هنا](https://t.me/MAXADS)', 1, "md") 
+send(msg.chat_id_, msg.id_, 1, '🖲┇ تم تعطيل ضهور الاعلانات لمده يوم \n📊┇ [يمكنك يوزره المزيد حول الاعلانات هنا](https://t.me/ZAMA00)', 1, "md") 
 else
-send(msg.chat_id_, msg.id_, 1, '💥┇ عزيزي المبرمج لايمكنك تعطيل هاذه الامر \n📊┇ [يمكنك يوزره المزيد حول الاعلانات هنا](https://t.me/MAXADS)', 1, "md") 
+send(msg.chat_id_, msg.id_, 1, '💥┇ عزيزي المبرمج لايمكنك تعطيل هاذه الامر \n📊┇ [يمكنك يوزره المزيد حول الاعلانات هنا](https://t.me/ZAMA00)', 1, "md") 
 end
 end
 if (text and text == "تفعيل الاعلانات" and is_creator(msg)) then 
 database:del("MAX:gr:not:ads:"..bot_id..msg.chat_id_..os.date("%x"))
-send(msg.chat_id_, msg.id_, 1, '🖲┇تم تفعيل ضهور الاعلانات \n📊┇ [يمكنك يوزره المزيد حول الاعلانات هنا](https://t.me/MAXADS)', 1, "md") 
+send(msg.chat_id_, msg.id_, 1, '🖲┇تم تفعيل ضهور الاعلانات \n📊┇ [يمكنك يوزره المزيد حول الاعلانات هنا](https://t.me/ZAMA00)', 1, "md") 
 end  
 if text:match("^وضع زمن التكرار (%d+)$") and is_owner(msg) then
 local floodt = {string.match(text, "^(وضع زمن التكرار) (%d+)$")}
@@ -4798,7 +4798,7 @@ local text =  [[
 
 ‎👨🏼‍💻 ⌁≻م4اوامر المبرمجين
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-📡 ┇Ch ~» @MAXTAME
+📡 ┇Ch ~» @MAXXTAME
 ]]
 send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'html')
 end
@@ -4849,7 +4849,7 @@ local text =  [[
 ♠️┇ 《 قفل / فتح 》 التكرار
 ♠️┇ 《 قفل / فتح》 الكلايش
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-CH:- @MAXTAME
+CH:- @MAXXTAME
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
 end
@@ -4915,7 +4915,7 @@ local text =  [[
 🕳┇ 《 مسح الصوره 》
 🕳┇ 《 مسح الرابط 》
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-📡 ┇Ch ~» @MAXTAME
+📡 ┇Ch ~» @MAXXTAME
 ]]
 send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'html')
 end
@@ -4968,7 +4968,7 @@ local text =  [[
 ♦┇ 《 تفعيل/تعطيل 》الحظر
 ♦┇ 《 تفعيل/تعطيل 》الطرد 
 ﹎﹎﹎﹎﹎﹎﹎﹎
-Ch ~» @MAXTAME
+Ch ~» @MAXXTAME
 ]]
 send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'html')
 end
@@ -5037,7 +5037,7 @@ local text =  [[
 ◾️┇تغير رابط الانلاين+الرابط
 ◾️┇《تفعيل/تعطيل》الانلاين
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-CH:- @MAXTAME
+CH:- @MAXXTAME
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
@@ -5056,9 +5056,9 @@ local text =  [[
 🔹┇تدخل مـعلومـآتك مـن توكن وآيـديـك
 🌟┇ومبروك نصبت سورس مــآكـس تيجي جديد
 
-📡┇<a href="https://telegram.me/MAXTAME">قناه السورس</a>
-📁┇<a href="https://telegram.me/MAXFILE">ملفات السورس</a>
-💬┇<a href="t.me/K_111BOT">بوت تواصل السورس</a> 
+📡┇<a href="https://telegram.me/MAXXTAME">قناه السورس</a>
+📁┇<a href="https://telegram.me/MAXXFILE">ملفات السورس</a>
+💬┇<a href="t.me/shahablll_bot">بوت تواصل السورس</a> 
 ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
